@@ -6,6 +6,11 @@ build/
 dist/
 .eggs/
 
+# Secrets — never commit a PyPI (or any) token
+pypi_token.json
+*.token.json
+.env
+
 # Test caches
 .pytest_cache/
 .coverage
