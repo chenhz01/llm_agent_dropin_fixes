@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-agent-dropin-fixes"
+version = "0.1.0"
+description = "Drop-in, tested reference fixes for recurring LLM-agent memory / RAG / context bugs, mined from 100+ real upstream issues."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Zhengming" }]
+keywords = ["llm", "agent", "rag", "memory", "debugging", "reference-fixes"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/chenhz01/llm_agent_dropin_fixes"
+"Bug Tracker" = "https://github.com/chenhz01/llm_agent_dropin_fixes/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
